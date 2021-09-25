@@ -1,33 +1,6 @@
-import { BrowserRouter } from "react-router-dom";
-import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
-import { SecondaryButton } from "./components/atoms/button/SecondaryButton";
-import { SearchInput } from "./components/molecules/SearchInput";
-import { UserCard } from "./components/organisms/user/USerVard";
-import { HeaderOnly } from "./components/templates/HeaderOnly";
-import { DefaultLayout } from "./components/templates/DefaultLayout";
+import { Router } from "./router/Router";
 import "./styles.css";
 
-const user = {
-  name: "Curry",
-  image: "https://www.homepage-tukurikata.com/image/lion.jpg",
-  mail: "12345@example.com",
-  phone: "090-1234-5678",
-  company: {
-    name: "test Company"
-  },
-  website: "https://google.com"
-};
-
 export default function App() {
-  return (
-    <BrowserRouter>
-      <DefaultLayout>
-        <PrimaryButton>テスト</PrimaryButton>
-        <SecondaryButton>second</SecondaryButton>
-        <br />
-        <SearchInput />
-        <UserCard user={user} />
-      </DefaultLayout>
-    </BrowserRouter>
-  );
+  return <Router />;
 }
