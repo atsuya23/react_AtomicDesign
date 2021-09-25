@@ -3,7 +3,12 @@ import styled from "styled-components";
 export const UserCard = () => {
   return (
     <div>
-      <img height={160} width={160} src="cutedog.jpg" alt="プロフィール写真" />
+      <img
+        height={160}
+        width={160}
+        src="https://www.homepage-tukurikata.com/image/lion.jpg"
+        alt="プロフィール写真"
+      />
       <p>name</p>
       <SDl>
         <dt>mail</dt>
