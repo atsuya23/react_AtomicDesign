@@ -1,9 +1,11 @@
+import styled from "styled-components";
+
 export const UserCard = () => {
   return (
     <div>
-      <img alt="プロフィール" />
+      <img height={160} width={160} src="cutedog.jpg" alt="プロフィール写真" />
       <p>name</p>
-      <dl>
+      <SDl>
         <dt>mail</dt>
         <dd>1111@mail.com</dd>
         <dt>Tel</dt>
@@ -12,7 +14,19 @@ export const UserCard = () => {
         <dd>AAA Factory</dd>
         <dt>WEB</dt>
         <dd>YYY.com</dd>
-      </dl>
+      </SDl>
     </div>
   );
 };
+
+const SDl = styled.dl`
+  text-align: left;
+  margin-bottom: 0px;
+  dt {
+    float: left;
+  }
+  dd {
+    padding-left: 32px;
+    padding-bottom: 8px;
+  }
+`;
